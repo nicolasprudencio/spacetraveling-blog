@@ -1,0 +1,54 @@
+.container {
+  max-width: 720px;
+  margin: 0 auto 4rem;
+
+  button {
+    margin-top: 4rem;
+    color: var(--highlight-pink);
+    background-color: transparent;
+    border: none;
+    transition: filter 0.2s;
+
+    &:hover{
+      filter: brightness(0.9);
+    }
+  }
+}
+
+.postContent {
+
+  & + li {
+    margin-top: 3rem;
+  }
+
+  .postTitle {
+    font-size: 1.75rem;
+    cursor: pointer;
+    color: var(--gray-100);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--highlight-pink);
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+  }
+
+  div {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+    }
+  }
+}
